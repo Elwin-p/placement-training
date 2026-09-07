@@ -1,0 +1,17 @@
+n = int(input())
+
+arr = list(map(int, input().split()))
+
+spike = int(input())
+
+spike = spike-spike*2
+
+for i in arr:
+  bi = bin(i)[2:]
+
+  
+  newbi = bi[:spike]
+  if(newbi == ""):
+    newbi=0
+    newbi = bin(newbi)
+  print (int(newbi,2))
