@@ -1,0 +1,12 @@
+n = int(input())
+
+bin=  bin(n)[2:]
+toggle=""
+for i in range(len(bin)):
+  if(bin[i]=="1"):
+    toggle=toggle+"0"
+  elif(bin[i]=="0"):
+    toggle=toggle+"1"
+
+print(int(toggle,2))
+print(bin)
